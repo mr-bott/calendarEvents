@@ -32,7 +32,7 @@ const Signup = () => {
 
           // Save user data to the backend
           const url=process.env.REACT_APP_BACKEND_URL
-          fetch('${url}/register-user', {
+          fetch(`${url}/register-user`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

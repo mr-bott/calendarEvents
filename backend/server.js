@@ -5,7 +5,9 @@ const firebase = require('firebase-admin');
 require('dotenv').config();
 
 const app = express();
-app.use(cors({orgin:process.env.Connect}));
+app.use(cors({
+  orgin:process.env.Connect
+}));
 app.use(express.json());
 
 // MySQL connection pool for better performance
