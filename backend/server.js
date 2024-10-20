@@ -95,6 +95,27 @@ app.post('/events', async (req, res) => {
   }
 });
 
+// to modify event
+app.put('/events/:id', async (req, res) => {
+  const eventId = req.params.id;
+  const { name, description } = req.body;
+
+  const query = `UPDATE events SET name = ?, description = ? WHERE id = ?`;
+  const values = [name, description, eventId];
+
+  try {
+    const [result] = await db.query(query, values); 
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ message: 'Event not found.' });
+    }
+    res.status(200).json({ message: 'Event updated successfully.' });
+  } catch (err) {
+    console.error('Failed to update event:', err);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+
 // delete an event
 app.delete('/events/:id', async (req, res) => {
   const eventId = req.params.id; 
