@@ -1,0 +1,10 @@
+.main_container_calander {
+    display: 'flex';
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90vh;
+    height: 100vh;
+    gap: '20px'
+    
+}

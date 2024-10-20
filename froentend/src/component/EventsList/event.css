@@ -1,0 +1,129 @@
+.event_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: black;
+    border: 1px solid #183153;
+    border-radius: 1rem;
+    min-width:400px;
+    width: 500px;
+    max-width:700px;
+}
+.logout{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.event_heading {
+
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #183153;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+
+
+}
+
+.events {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    margin-bottom:.5rem;
+    background-color:#74C0FC;
+    border-radius: .5rem;
+    box-shadow: 3px 3px #183153;
+}
+
+.event_details {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:flex-start;
+    height: 100%;
+    width:80%;
+}
+.events_nodata{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+.event_events_heading {
+
+    margin-right: auto;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight:bold;
+    font-size: 1.2rem;
+    line-height: .5rem;
+    letter-spacing: 0.00938em;
+    color: #183153;
+    margin-left: 1rem;
+    text-decoration: underline;
+
+}
+
+.event_events_des {
+    margin-left: 1rem;
+    color: #183153;
+    margin-right: auto;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight:bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.00938em;
+}
+.event_button {
+    width: 15%;
+    padding: 10px;
+    background-color: hsl(358, 59%, 55%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    box-shadow: 3px 3px #183153;
+  
+}
+.add_event_container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    width: 90%;
+}
+.add_input{
+    width:70%;
+    padding: 10px;
+    margin: 10px 0;
+    border:3px solid #183153;
+    border-radius:8px;
+    font-size: 16px;
+    color: #183153;
+    box-shadow: 3px 3px #183153;
+}
+
+.add_event_button {
+    width:30%;
+    padding: 8px;
+    background-color:hsl(358, 59%, 55%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    box-shadow: 3px 3px black;
+}

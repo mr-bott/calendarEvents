@@ -1,0 +1,76 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #183153;
+}
+
+.css-u0soqy-MuiPickerStaticWrapper-root {
+  box-shadow: 3px 2px 10px 5px #888888 !important;
+}
+
+.css-hlj6pa-MuiDialogActions-root {
+  display: none !important;
+}
+
+.css-j88s13-MuiPickersToolbar-root-MuiDatePickerToolbar-root
+  .MuiPickersToolbar-penIconButton {
+  display: none !important;
+}
+
+.css-j88s13-MuiPickersToolbar-root-MuiDatePickerToolbar-root {
+  padding: 0 !important;
+}
+
+.css-hq2kpw-MuiGrid-root-MuiPickersToolbar-content {
+  justify-content: center !important;
+  background-color: orange;
+  padding: 1rem;
+}
+
+.css-1hbyad5-MuiTypography-root {
+  display: none !important;
+}
+
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: orange !important;
+}
+
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: orange !important;
+  color: black !important;
+}
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+  border-color: transparent !important;
+  color: orange;
+}
+
+.css-144dnr3-MuiBadge-badge {
+  color: green;
+}
+
+.css-1n2mv2k {
+  background-color: #f4f4f4;
+  margin-bottom: 1rem;
+}
+.css-1psulnz-MuiTypography-root-MuiDatePickerToolbar-title {
+  margin:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 2.125rem;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+  text-align: left;
+  margin: auto 16px auto auto;
+  height:100%;
+  background-color:orange;
+}
