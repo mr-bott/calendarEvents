@@ -84,20 +84,14 @@ app.get('/events/:id', async (req, res) => {
 // add a new event
 app.post('/events', async (req, res) => {
   const { userId,event_date, name, description } = req.body; 
-
-  const date = new Date(event_date);
-  date.setDate(date.getDate() + 1);
-
-  // Format the date to 'YYYY-MM-DD' for MySQL
-  const formattedDate = date.toISOString().split('T')[0]; // Get only the date part
-
+  
   const query = 'INSERT INTO events (user_id, event_date, name, description) VALUES (?, ?, ?, ?)';
   try {
-    const [result] = await db.query(query, [userId, formattedDate, name, description]);
+    const [result] = await db.query(query, [userId,event_date, name, description]);
     res.status(201).json({ message: 'Event added successfully' });
   } catch (err) {
     console.error('Error adding event:', err);
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error:"Internal server error" });
   }
 });
 
