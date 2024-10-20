@@ -95,7 +95,7 @@ app.post('/events', async (req, res) => {
     res.status(201).json({ message: 'Event added successfully' });
   } catch (err) {
     console.error('Error adding event:', err);
-    res.status(500).json({ error: 'Server error' });
+    res.status(500).json({ error: err.message });
   }
 });
 
